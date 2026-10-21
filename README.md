@@ -1,8 +1,8 @@
 # MissileWars-Advanced-Map-Voting
 Ein verbessertes Map Voting für MissileWars.
 
-Addon für [MissileWars](https://github.com/RedstoneFuture/missilewars) (gebaut für MissileWars 5.4.0-Dev_26.1 auf Paper 26.2 mit Java 25).
-Erweitert das Map-Voting um mehrere Votes pro Spieler und fügt `/mw forcemap` hinzu. MissileWars selbst bleibt unverändert.
+Addon für [MissileWars](https://github.com/RedstoneFuture/missilewars).
+Erweitert das Map-Voting um mehrere Votes pro Spieler und fügt `/mw forcemap` hinzu.
 
 ## Befehle
 | Befehl | Recht | Beschreibung |
