@@ -1,0 +1,14 @@
+name: MissileWarsMapVoting
+version: 1.3.0
+main: de.mwaddon.mapvoting.MapVotingAddon
+api-version: 1.21
+description: Addon for MissileWars - multiple map votes and /mw forcemap
+depend: [ MissileWars ]
+
+permissions:
+  mw.forcemap:
+    description: Allows to force the map of a game with /mw forcemap <map> [game].
+    default: op
+  mw.vote.stack:
+    description: Allows to give more than one vote to the same map (needs mw.vote.amount.<n>).
+    default: false

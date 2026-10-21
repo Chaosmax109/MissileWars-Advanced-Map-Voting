@@ -1,0 +1,47 @@
+# MissileWars MapVoting Addon
+#
+# Permissions:
+#   mw.vote.amount.<n>  - number of votes of a player (e.g. mw.vote.amount.3). Default: 1
+#   mw.vote.stack       - allows multiple votes on the same map
+#   mw.forcemap         - /mw forcemap <map> [game]
+#
+# Commands:
+#   /mw vote <map>               - give a vote
+#   /mw voteall <map>            - give all remaining votes to the map (needs mw.vote.stack)
+#   /mw unvote [map]             - remove a vote (without map: all votes)
+#   /mw clearvotes               - remove all own votes
+#   /mw forcemap <map> [game]    - force a map (alias: /mw setmap)
+#   /mw mapvotingreload          - reload this config
+
+# Highest possible amount of votes per player (protection against typos in permissions).
+max-votes-limit: 100
+
+# Messages (color codes with &). The prefix of MissileWars is used.
+messages:
+  vote-success: "&7Du hast einen Vote an %map% &7vergeben. Deine Votes: &e%used%&7/&e%max%"
+  vote-success-all: "&7Du hast &e%amount% &7Votes an %map% &7vergeben. Deine Votes: &e%used%&7/&e%max%"
+  vote-removed: "&7Du hast einen Vote von %map% &7entfernt. Deine Votes: &e%used%&7/&e%max%"
+  vote-removed-all: "&7Du hast alle deine Votes entfernt."
+  vote-not-voted: "&cDu hast nicht für %map% &cgevotet."
+  vote-no-votes-given: "&cDu hast noch nicht gevotet."
+  vote-no-votes-left: "&cDu hast keine Votes mehr übrig (&e%used%&c/&e%max%&c). Entferne einen Vote mit &e/mw unvote <map> &coder per Rechtsklick im Menü."
+  vote-no-stack: "&cDu hast bereits für %map% &cgevotet. Du darfst nur einen Vote pro Map vergeben."
+  menu-lore-percent: "&7Ergebnis: %bar% &e%percent%%"
+  menu-lore-total: "&7Votes gesamt: &e%votes%"
+  menu-lore-own: "&7Deine Votes: &e%votes%"
+  menu-lore-left: "&7Übrige Votes: &e%left%&7/&e%max%"
+  menu-lore-hint-add: "&8» Linksklick: Vote geben"
+  menu-lore-hint-add-all: "&8» Shift+Linksklick: alle übrigen Votes geben"
+  menu-lore-hint-remove: "&8» Rechtsklick: Vote entfernen"
+  menu-lore-hint-clear: "&8» Shift+Rechtsklick: alle Votes entfernen"
+  menu-info-name: "&eDeine Votes"
+  menu-info-lore: "&7Vergeben: &e%used%&7/&e%max%"
+  menu-clear-name: "&cAlle Votes entfernen"
+  menu-clear-lore: "&7Entfernt alle deine Votes (&e%used%&7/&e%max%&7)."
+  forcemap-success: "&7Die Map %map% &7wurde für das Spiel %game% &7festgelegt."
+  forcemap-broadcast: "&7Die Map %map% &7wurde von einem Teammitglied festgelegt."
+  forcemap-already-selected: "&cDie Map %map% &cist bereits ausgewählt."
+  forcemap-not-in-lobby: "&cDie Map kann nur geändert werden, solange das Spiel in der Lobby ist."
+  forcemap-failed: "&cDie Map konnte nicht geändert werden. Details stehen in der Konsole."
+  forcemap-usage: "&cBenutzung: /mw forcemap <map> [spiel]"
+  reload: "&7Das MapVoting-Addon wurde neu geladen."
